@@ -1,21 +1,23 @@
 <template>
   <header>
-    <nav>
-      <ul>
-        <li><NuxtLink to="/haojia">好价商品</NuxtLink></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <NuxtLink to="/" class="logo">今日好价</NuxtLink>
+      <nav>
+        <NuxtLink to="/haojia">优惠</NuxtLink>
+        <NuxtLink to="/about">关于</NuxtLink>
+      </nav>
+    </div>
   </header>
-  <ContentRenderer v-if="home" :value="home" />
-  <div v-else>首页未找到</div>
+  <main>
+    <h1>今日好价</h1>
+    <p>双十一优惠信息</p>
+  </main>
 </template>
 
 <script setup lang="ts">
-const { data: home } = await useAsyncData(() => queryCollection('content').path('/').first())
-
 useSeoMeta({
-  title: home.value?.title,
-  description: home.value?.description
+  title: '今日好价',
+  description: '双十一优惠信息'
 })
 </script>
 

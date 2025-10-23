@@ -16,9 +16,12 @@ export default defineNuxtConfig({
     output: {
       publicDir:'../docs',
     },
+    debug: true,
     prerender: {
       // Workaround for "Error: [404] Page not found: /manifest.json"
       failOnError: false,
+      //crawlLinks: true,
+      //concurrency: 1,
     },
   }
 })

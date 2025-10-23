@@ -1,17 +1,11 @@
 <template>
   <div>
-    <UApp>
-      <NuxtLayout>
-        <RedPack>
-          <NuxtPage />
-        </RedPack>
-      </NuxtLayout>
-    </UApp>
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 <script>
-import "html5-native-ui"
-
 </script>
 <style lang="scss">
 @use "@/assets/style/index.scss";
