@@ -1,3 +1,4 @@
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -11,4 +12,13 @@ export default defineNuxtConfig({
   // plugins: [
   //   '/plugins/vclipboard.js',
   // ],
+  nitro: {
+    output: {
+      publicDir:'../docs',
+    },
+    prerender: {
+      // Workaround for "Error: [404] Page not found: /manifest.json"
+      failOnError: false,
+    },
+  }
 })
