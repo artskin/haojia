@@ -1,0 +1,9 @@
+// @import "tailwindcss";
+// @import "@nuxt/ui";
+body{
+    padding: 1em;
+    height: 100vh;
+    background: linear-gradient(to bottom, transparent -100px,#fff 100vh),
+    linear-gradient(25deg, #f9edd2be,#ffd1dea7),
+    radial-gradient(30% 200px at 100px 50px, rgba(249,167,176,0.5),transparent);
+}
