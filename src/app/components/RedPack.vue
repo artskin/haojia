@@ -18,10 +18,16 @@
       
     </div>
   </header>
-  <h2>每日红包</h2>
-  <div class="day-task flex">
+  
+  
+  <section class="day-task redpack">
+    <p class="title2">每日可领，最高1111元无门槛红包</p>
+  <div class="col">
+    
     <div class="red-wrap">
-      <em>京东</em>
+      <em>京东
+        <small>每日3次</small>
+      </em>
       <button class="btn" data-app="jd" data-clipboard-text="15:/抢紅包，购痛快~最高11111元紅包等你来！￥B3s9E0ah6xBRMh5G￥ MF5681 ，⇴亰▾Dσδδng">
         <span>领取🧧</span>
       </button>
@@ -34,6 +40,7 @@
     </div>
     
   </div>
+  </section>
   <section>
       <h2 class="title2">必领神券</h2>
         <div class="quan">
@@ -123,6 +130,32 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
+.redpack{
+  background-color: rgb(250, 253, 255,0.7);
+  padding: 8px;
+  border-radius: 5px;
+  .title2{
+    font-weight: normal;
+    margin: 0;
+    padding-left: .5rem;
+    color:var(--primary-opacity);
+    font-size: .9rem;
+  }
+  a{
+    display: inline-block;
+    padding: 0 .5rem;
+    text-decoration: none;
+    color: #aa3b28;
+    span{
+      font-size: 14px;
+      color: #fff;
+      display: inline-block;
+      text-align: center;
+      flex: 1;
+      padding-right: 1rem;
+    }
+  }
+}
 .flex{
   display: flex;
 }
@@ -152,8 +185,6 @@ em{
   background-color: rgb(250, 253, 255,0.7);
   padding: 8px;
   border-radius: 5px;
-  display: flex;
-    justify-content: space-between;
   h2{
     font-weight: normal;
     font-size: 14px;
@@ -180,9 +211,7 @@ em{
     color: #aa3b28;
   }
   .red-wrap{
-    width: calc(50% - 0.5em);
-    
-    padding: .8em 1em .8em 2em;
+    padding: .8em 1em;
     border-radius: 5px;
     outline: 1px solid #df572e;
     position: relative;
@@ -191,11 +220,21 @@ em{
     font-size: 12px;
     color: #fff;
     align-items: center;
+    display: flex;
     em{
       font-size: 18px;
       display: inline-block;
       width: 50%;
       text-align: center;
+      line-height: 1.2;
+      span:has(small){
+        padding-top: .2rem;
+      }
+      small{
+        display: block;
+        transform: scale(0.7);
+        opacity: 0.6;
+      }
     }
     button{
       z-index: 9;
@@ -242,7 +281,6 @@ em{
 }
 .col>div{
   width: calc(50% - 0.5rem);
-  text-align: center;
   padding: .5rem;
   border-radius: 6px;
   a,img{
@@ -252,48 +290,6 @@ em{
     display: inline-block;
     background-color: #fff;
     border-radius: 50%;
-  }
-  
-  .red-wrap{
-    outline: 1px solid #df572e;
-    border-radius: 6px;
-    padding: .1rem;
-    position: relative;
-    overflow: hidden;
-    background-color: #df572e;
-    font-size: 12px;
-    color: #fff;
-    height: 3rem;
-    background: linear-gradient(5deg, #bb3227 0%,  #ea5321 100%);
-    a{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: .5rem .6rem;
-      height: 3rem;
-      box-sizing: border-box;
-      span:has(small){
-        padding-top: .2rem;
-      }
-      small{
-        display: block;
-        transform: scale(0.7);
-        opacity: 0.6;
-      }
-    }
-    a::after{
-      content: " ";
-      display: block;
-      width: 9rem;
-      height: 9rem;
-      border-radius: 5rem;
-      position: absolute;
-      background-color: rgba(255, 255, 255, 0.99);
-      /* background: linear-gradient(15deg, #df572e 0%, #df812e 40%, #df572e 100%); */
-      right: -4rem;
-      z-index: 0;
-      box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.43);
-    }
   }
 }
 .col>div a em{
@@ -369,6 +365,7 @@ em{
  }
  .title2{
   font-size: 18px;
+  padding-bottom: .2rem;
  }
  .tip-content{
   font-size: 16px;
