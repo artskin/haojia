@@ -21,17 +21,18 @@
   <h2>每日红包</h2>
   <div class="day-task flex">
     <div class="red-wrap">
-      <em>淘宝</em>
-      <button class="btn" data-app="taobao" data-clipboard-text="0$uPMCfXieLzW$:// MU5183">
-        <span>领取🧧</span>
-      </button>
-    </div>
-    <div class="red-wrap">
       <em>京东</em>
       <button class="btn" data-app="jd" data-clipboard-text="15:/抢紅包，购痛快~最高11111元紅包等你来！￥B3s9E0ah6xBRMh5G￥ MF5681 ，⇴亰▾Dσδδng">
         <span>领取🧧</span>
       </button>
     </div>
+    <div class="red-wrap">
+      <em>淘宝</em>
+      <button class="btn" data-app="taobao" data-clipboard-text="0$uPMCfXieLzW$:// MU5183">
+        <span>领取🧧</span>
+      </button>
+    </div>
+    
   </div>
   <section>
       <h2 class="title2">必领神券</h2>
@@ -93,7 +94,7 @@
 import ClipboardJS from "clipboard"
 import AutoDialog from "autodialog.js"
 import Typed from 'typed.js';
-console.log(AutoDialog)
+
 const typedSlogan = ref(null)
 
 onMounted(() => {

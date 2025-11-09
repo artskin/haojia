@@ -9,6 +9,11 @@
       <!-- 微信：plus2688 -->
       <img src="/imgs/vchat.png" width="150" alt="vchat" />
     </p>
+    <nav>
+      <ul>
+        <li><NuxtLink to="/about">关于</NuxtLink></li>
+      </ul>
+    </nav>
   </footer>
 </template>
 
@@ -29,7 +34,7 @@ hr {
 .footer {
   padding: 2rem 0;
   text-align: center;
-  color: #666;
+  color: #999;
   font-size: 12px;
   p{
     padding: 1rem 0;

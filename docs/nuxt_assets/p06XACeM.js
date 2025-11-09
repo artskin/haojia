@@ -1,0 +1,1 @@
+import{F as t,a,o,k as n}from"#entry";const p=t({__name:"about",setup(s){return(l,e)=>(o(),a("section",null,[...e[0]||(e[0]=[n("p",null,"This page will be displayed at the /about route.",-1)])]))}});export{p as default};
