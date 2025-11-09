@@ -1,1 +1,0 @@
-import{e as a,c as t,a as o,o as n}from"#entry";const p=a({__name:"haojia",setup(s){return(l,e)=>(n(),t("section",null,[...e[0]||(e[0]=[o("p",null,"This page will be displayed at the /about route.",-1)])]))}});export{p as default};

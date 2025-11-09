@@ -28,12 +28,12 @@ export default defineNuxtConfig({
     baseURL: '/haojia/',
     buildAssetsDir: 'nuxt_assets',
     head: {
-      title: '郝家',
+      title: '阿童木',
       meta: [
-        { name: 'description', content: '郝家是一个专业的法律咨询公司，为客户提供专业的法律服务。' },
+        { name: 'description', content: '大促好价攻略。' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/haojia/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/haojia/favicon.png' },
       ],
     },
   },

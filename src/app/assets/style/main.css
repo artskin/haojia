@@ -3,3 +3,6 @@
 html{
     font-size: 16px;
 }
+@theme {
+  --ui-primary: #df5718;
+}
