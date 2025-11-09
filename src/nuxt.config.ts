@@ -26,5 +26,9 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: '/haojia/',
-  }
+    buildAssetsDir: 'nuxt_assets',
+  },
+  experimental: {
+    payloadExtraction: false,
+  },
 })
