@@ -1,0 +1,1 @@
+import{_ as r,a as o,o as a,r as l,k as t}from"#entry";const n={};function c(s,e){return a(),o("div",null,[l(s.$slots,"default"),e[0]||(e[0]=t("p",{class:"text-center"},[t("small",null,"copy right 2024~2025 @阿潼沐")],-1))])}const f=r(n,[["render",c]]);export{f as default};
