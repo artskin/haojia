@@ -27,6 +27,15 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/haojia/',
     buildAssetsDir: 'nuxt_assets',
+    head: {
+      title: '郝家',
+      meta: [
+        { name: 'description', content: '郝家是一个专业的法律咨询公司，为客户提供专业的法律服务。' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    },
   },
   experimental: {
     payloadExtraction: false,
