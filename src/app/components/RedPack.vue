@@ -20,16 +20,14 @@
   </AbouMe>
 </template>
 <script setup>
-import ClipboardJS from "clipboard"
+// import ClipboardJS from "clipboard"
 
-console.log(window)
- const clipboard = new ClipboardJS('.btn');
- const dialog = document.querySelector('dialog');
- clipboard.on('success', function(e) {
-    console.info('Text:', e.text);
-    //dialog.show();
-    e.clearSelection();
-  });
+//  const clipboard = new ClipboardJS('.btn');
+//  clipboard.on('success', function(e) {
+//     console.info('Text:', e.text);
+//     //dialog.show();
+//     e.clearSelection();
+//   });
 </script>
 
 <style scoped lang="scss">
