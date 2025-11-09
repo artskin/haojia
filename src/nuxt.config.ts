@@ -31,4 +31,7 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false,
   },
+  ui:{
+    fonts:false
+  }
 })
